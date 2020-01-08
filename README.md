@@ -17,7 +17,7 @@ start docker container in some other folder
 ```bash
 docker run --name nginx -d -p 80:80 -v ${PWD}:/home/:ro \
 -v /Users/shubhamtatvamasi/myFiles/git/nginx-file-explorer/nginx.conf:/etc/nginx/conf.d/default.conf:ro \
-nginx:stable
+nginx:alpine
 ```
 
 remove the docker container
