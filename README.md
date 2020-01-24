@@ -5,12 +5,11 @@ Start the server
 docker-compose up -d
 ```
 
-this commands is for macOS
-
 check your local ip
 ```bash
 ipconfig getifaddr en0
 ```
+> this commands is for macOS
 ---
 
 start docker container in some other folder
