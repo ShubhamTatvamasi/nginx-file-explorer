@@ -12,6 +12,18 @@ ipconfig getifaddr en0
 > this commands is for macOS
 ---
 
+build docker image:
+```bash
+docker build -t shubhamtatvamasi/nginx-file-explorer .
+```
+
+start the container:
+```bash
+docker run --name nginx -d -p 80:80 -v ${PWD}:/home/:ro shubhamtatvamasi/nginx-file-explorer
+```
+
+---
+
 start docker container in some other folder
 ```bash
 docker run --name nginx -d -p 80:80 -v ${PWD}:/home/:ro \
