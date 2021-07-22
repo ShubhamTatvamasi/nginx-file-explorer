@@ -14,9 +14,12 @@ docker-compose up -d
 
 check your local ip
 ```bash
+# for linux
+ip a
+
+# for macOS
 ipconfig getifaddr en0
 ```
-> this commands is for macOS
 ---
 
 build docker image:
