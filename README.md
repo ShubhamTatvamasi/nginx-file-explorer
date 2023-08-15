@@ -27,7 +27,7 @@ docker build -t shubhamtatvamasi/nginx-file-explorer .
 
 start the container:
 ```bash
-docker run --name nginx -d -p 80:80 -v ${PWD}:/home/:ro shubhamtatvamasi/nginx-file-explorer
+docker run --name nginx -d -p 80:80 --restart unless-stopped -v ${PWD}:/home/:ro shubhamtatvamasi/nginx-file-explorer
 ```
 
 ---
